@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/compiled/cagriddle.v2.css">
+<style type="text/css">
+	.unhappyMessage {
+		top: 40px;
+		/* background: #db5252; */
+		color: #db5252;
+		padding: 0 10px;
+	}
+</style>
+
+</head>
+<body>
+<div class="ca-container">
+	<form class="ca-form" action="#" method="post" id="caform">
+		<div class="ca-row">
+			<div class="ca-col-4">
+				<label>First Name</label>
+				<input type="text" name="fullname" id="fullname" placeholder="Full Name" />
+			</div>
+
+			<div class="ca-col-4">
+				<label>Email Address</label>
+				<input type="text" name="email" id="email" placeholder="Email Address" />
+			</div>
+
+			<div class="ca-col-4">
+				<label>Phone Number</label>
+				<input type="text" name="phone" id="phone" placeholder="Phone Number" />
+			</div>
+		</div>
+
+		<div class="ca-row">
+			<div class="ca-col-12 ca-radio-inline">
+				<p>What do you wish to select?</p>
+				<input type="radio" name="gender" value="male" checked><label>Phone</label>
+				<input type="radio" name="gender" value="female"> <label>Email</label>
+				<input type="radio" name="gender" value="other"> <label>Other</label>  
+			</div>
+		</div>
+				
+		<div class="ca-row">
+			<div class="ca-col-12"><textarea placeholder="Comments"></textarea></div>
+		</div>
+
+		<div class="ca-row">
+			<div class="ca-col-2 ca-offset-10">
+				<button type="submit" value="submit" class="ca-btn-demo">Submit</button>
+			</div>
+		</div>
+
+
+
+	</form>
+
+
+
+
+
+</div>
+
+
+<script src="https://www.theautohost.com/_assets/coding/js/jquery-2.1.4.js"></script>
+<script src="js/ca.plugins.v2.js"></script>
+
+	<script type="text/javascript">
+		$('#caform').isHappy({
+    fields: {
+      // reference the field you're talking about, probably by `id`
+      // but you could certainly do $('[name=name]') as well.
+      '#fullname': {
+        required: true,
+        message: 'Please enter your full name'
+      },
+      '#email': {
+        required: true,
+        message: 'Please enter a valid email address',
+        test: happy.email // this can be *any* function that returns true, false, or an instance of Error
+      }
+    }
+  });
+	</script>
+
+
+</body>
+</html>

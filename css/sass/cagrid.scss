@@ -1,0 +1,110 @@
+/* Grid Version 2
+/* Author: Louis Stephens
+/*
+*/
+
+// Fallback for previous version 1.0
+@import url("https://www.theautohost.com/_assets/coding/cagriddle/css/cagriddle.min.css");
+@import "variables";  
+@import "grid";  
+@import "mixins";  
+@import "functions";  
+@import "fonts";  
+@import "forms";  
+@import "tables";  
+@import "display";  
+@import "components";  
+@import "media";  
+  
+
+#standard-preview {
+	width: 900px ;
+}
+
+#mobile-preview {
+	width: 450px ;
+}
+  
+.demo {
+	background: #a9fffe;
+	padding: 10px;
+} 
+
+
+
+.ca-container * {
+	margin: 0;
+	padding: 0;
+	//@include box-sizing(border-box)
+	box-sizing: border-box;
+}
+
+ 
+
+.ca-container {
+	padding: $padding-vertical 0;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+
+
+& #ca-sidebar [class*="ca-col-"]::after {
+	content: "";
+	display: table;
+	clear: both; 
+
+	}
+
+	& #ca-sidebar {
+		width: 17%;
+		z-index: 999999;
+		position: fixed;
+	}
+
+
+	& #ca-body .ca-row:first-child {
+		padding-top: 0;
+	}
+	
+	// Demo
+ 	& .ca-background-demo {
+		 @include background($demo);
+	}
+	
+	& .ca-display-desktop {
+		display: block;
+	}
+
+	& .ca-display-mobile {
+		display: none;
+	}
+
+	& .ca-display-none {
+		display: none;
+	}
+
+	& .unhappyMessage {
+		padding: 5px 10px;
+		background: red;
+		color: $white;
+	}
+
+
+
+
+
+}
+
+.ca-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding: $padding-global 0 $padding-global $padding-global;
+}
+
+
+
+
+@import "mediaqueries";

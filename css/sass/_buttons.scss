@@ -1,0 +1,150 @@
+// Dev
+
+/*@mixin manufacturer($bg) {
+  background: $bg;
+  border: 1px solid $bg;
+  &:hover {
+    background:darken($bg,15%);
+  }
+  &:active {
+    background:darken($bg,15%); 
+  } 
+}
+
+.ca-container {
+  & a[class*="ca-btn-"] {
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  
+  & a[class*="ca-btn-"]:before {
+      pointer-events: none;
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, transparent 80%);
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform, opacity;
+      transition-property: transform, opacity;   
+  }
+  
+  
+  & a[class*="ca-btn-"]:hover, a[class*="ca-btn-"]:focus, a[class*="ca-btn-"]:active {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+  
+  & a[class*="ca-btn-"]:hover:before, a[class*="ca-btn-"]:focus:before, a[class*="ca-btn-"]:active:before {
+    opacity: 1;
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  
+
+  & .ca-btn-acura {
+   @include manufacturer($acura);
+  }
+
+ & .ca-btn-audi {
+   @include manufacturer($audi);
+  }
+ & .ca-btn-bmw {
+   @include manufacturer($bmw);
+  }
+ & .ca-btn-chevy {
+   @include manufacturer($chevy);
+  }
+ & .ca-btn-ford {
+   @include manufacturer($ford);
+  }
+ & .ca-btn-gmc {
+   @include manufacturer($gmc);
+  }
+ & .ca-btn-honda {
+   @include manufacturer($honda);
+  }
+ & .ca-btn-hyundai {
+   @include manufacturer($hyundai);
+  }
+ & .ca-btn-infiniti {
+   @include manufacturer($infiniti);
+  }
+ & .ca-btn-kia {
+   @include manufacturer($kia);
+  }
+ & .ca-btn-lexus {
+   @include manufacturer($lexus);
+  }
+ & .ca-btn-lincoln {
+   @include manufacturer($lincoln);
+  }
+
+ & .ca-btn-maserati {
+   @include manufacturer($maserati);
+  }
+
+ & .ca-btn-mazda {
+   @include manufacturer($mazda);
+  }
+ & .ca-btn-mb {
+   @include manufacturer($mb);
+  }
+ & .ca-btn-mitsubishi {
+   @include manufacturer($mitsubishi);
+  }
+ & .ca-btn-nissan {
+   @include manufacturer($nissan);
+  }
+ & .ca-btn-subaru {
+   @include manufacturer($subaru);
+  }
+ & .ca-btn-toyota {
+   @include manufacturer($toyota);
+  }
+ & .ca-btn-volvo {
+   @include manufacturer($volvo);
+  }
+ & .ca-btn-vw {
+   @include manufacturer($vw);
+  }
+
+  & .ca-btn-bmw {
+    border-radius: 0 !important;
+  }
+  // Demo
+  & .ca-btn-demo {
+    @include manufacturer($demo);
+  }
+
+
+  & .ca-background-bmw {
+     border-radius: 0 !important;
+  }
+  
+
+}*/

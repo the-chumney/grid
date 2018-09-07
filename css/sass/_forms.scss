@@ -1,0 +1,66 @@
+.ca-container {
+    
+	//form
+	& form.ca-form {
+		padding: 10px;
+		border: 1px solid #c5c5c5;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+	}
+
+	& form.ca-form label {
+		font-size: 14px;
+		padding: 10px 0;
+	}
+
+	& form.ca-form .ca-radio-inline input[type=radio] {
+		display: inline;
+	}
+
+	& form.ca-form .ca-radio-inline label {
+		padding: 0 10px;
+	}
+    
+	& form.ca-form input[type=text] {
+		font-size: 14px;
+		width: 100%;
+		border: 1px solid #c5c5c5;
+		padding: 10px;
+		margin: 10px 0 0 0;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+	}
+
+	& form.ca-form .ca-form-inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	& form.ca-form .ca-form-inline label {
+		padding: 0 5px 0 0;
+	}
+
+	& form.ca-form .ca-form-inline input[type=text] {
+		width: auto;
+	}
+
+	& form.ca-form textarea {
+		font-size: 14px;
+		width: 100%;
+		border: 1px solid #c5c5c5;
+		padding: 10px;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+	}
+
+	& form.ca-form {
+		max-width: 100%;
+	}
+
+
+
+
+}

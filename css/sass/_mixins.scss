@@ -1,0 +1,183 @@
+@mixin manufacturer($bg) {
+	background: $bg;
+	border: 1px solid $bg;
+	color: #FFFFFF;
+    padding: 15px 20px !important;
+	width: 100%;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 $bg;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	&:hover {
+   	box-shadow: inset 0 50px 0 0 darken($bg,15%);
+
+	}
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+// Button with border
+@mixin buttonoutline($bg) {
+	background: none;
+	border: 2px solid $bg;
+	color: $bg;
+    padding: 15px 20px !important;
+	width: 100%;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 $bg;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	&:hover {
+	color: $white;
+   	//box-shadow: inset 0 50px 0 0 darken($bg,15%);
+   	box-shadow: inset 0 50px 0 0 $bg;
+
+	}
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+
+
+@mixin buttongroup($bg) {
+	background: $bg;
+	border: 1px solid $bg;
+	color: #FFFFFF;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+	
+	& li {
+		text-decoration: none;
+		display: block;
+
+		& a {
+			color: $white;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			
+			&:hover {
+			    transition: all 0.3s ease;
+				background:darken($bg,15%); 
+			}
+		}
+	}
+	
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+@mixin trims($bg) {
+	background: $bg;
+	border: 1px solid $bg;
+	color: #FFFFFF;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 !important;
+	
+	& li {
+		display: block;
+
+		& ul {
+			display: none;
+		}
+
+		& a {
+
+			color: $white;
+			display: block;
+			padding: 10px;
+			text-decoration: none;
+			
+		}
+	
+		&:hover {
+			background: $bg; 
+			& ul {
+				padding: 0;
+				display: block;
+			    transition: all 0.3s ease;
+
+				& li a:hover {
+				    transition: all 0.3s ease;
+					background:darken($bg,15%); 
+
+				}
+			}
+		}
+
+	}
+	
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+// Button with border
+@mixin hr($bg) {
+	   display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $bg;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+
+
+
+@mixin button($bg) {
+	background: $bg;
+	&:hover {
+		background:darken($bg,15%);
+	}
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+
+
+@mixin background($bg) {
+background: $bg;
+}
+
+@mixin text($bg) {
+color: $bg;
+}

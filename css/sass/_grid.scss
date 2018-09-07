@@ -1,0 +1,30 @@
+.ca-container {	
+	& .ca-row {
+		width: 100%;
+		padding: $padding-vertical 0;
+		overflow: auto;
+
+	& [class*="ca-col-"] {
+			float: left;
+			padding-right: $padding-global;
+		}
+
+	& [class*="ca-col-"] {
+			padding:0 10px;
+	}
+
+	& [class*="ca-col-"] > .ca-row [class*="ca-col-"] {
+  		padding-left: 0 !important;
+	}  
+
+
+	& [class*="ca-col-"] > .ca-row [class*="ca-col-"]:last-of-type {
+  		padding-right: 0 !important;
+	}
+
+	& .ca-col-fifths {
+		width: 20%;
+	}
+
+	} //end row
+}

@@ -1,0 +1,26 @@
+.ca-container {
+
+	& .ca-display-desktop {
+		display: block;
+	}
+
+	& .ca-display-mobile {
+		display: none;
+	}
+
+	& .ca-display-none {
+		display: none;
+	}
+
+	& .unhappyMessage {
+		padding: 5px 10px;
+		background: red;
+		color: $white;
+	}
+
+	& .ca-collapse {
+		padding-top: 0 !important;
+		padding-bottom:  0 !important;
+	}
+
+}

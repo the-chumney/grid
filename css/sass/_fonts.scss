@@ -1,0 +1,75 @@
+.ca-container {
+
+	// Text and Font Classes
+	& .ca-font-disclaimer{
+		font-size: 8px;
+	}
+
+	& h1 {
+		padding-left:0;
+		font-size: 32px;
+	}
+
+	& h2 {
+		padding-left:0;
+		font-size: 24px;
+	}
+	
+	& h3 {
+		padding-left:0;
+		font-size: 18px;
+	}
+	
+	& h4 {
+		padding-left:0;
+		font-size: 16px;
+	}
+
+	& h5 {
+		padding-left:0;
+		font-size: 14px;
+	}
+
+	& p {
+		padding: 10px 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 110%;
+	}
+
+	& br {
+		display: none !important;
+	}
+
+	& ul {
+		font-size: 14px; 
+		padding: 5px 0 10px 20px;
+		list-style: disc;
+	}
+
+	& ul.ca-list-none {
+		list-style: none;
+	}
+
+	& ul.ca-list-inline li {
+		display: inline;
+		padding: 10px 10px;
+		margin: 10px 0;
+	}
+
+	& ul.ca-list-inline li:first-of-type {
+		padding-left: 0;
+	}
+
+	& ul.ca-list-inline li:last-of-type {
+		padding-right: 0;
+	}
+
+	& .ca-text-bold {
+		font-weight: bold;
+	}
+
+	& .ca-text-underline {
+		text-decoration: underline;
+	}
+}

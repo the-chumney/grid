@@ -1,0 +1,72 @@
+
+
+
+	& table.ca-table {
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid #c5c5c5;
+		border-collapse: collapse;
+
+		th {
+			//background: #808080;
+			color: #FFFFFF;
+			font-weight: bold;
+			  font-size: .85em;
+ 			 letter-spacing: .1em;
+  			text-transform: uppercase; 
+		}
+
+		td {
+			font-size: 14px;
+			border: 1px solid #c5c5c5;
+		}
+
+		td,th {
+  			padding: .625em !important;
+  			text-align: center;
+		}
+	}
+
+	& table.ca-table-striped {
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		border:none !important;
+
+		& th {
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: .85em;
+ 			letter-spacing: .1em;
+  			text-transform: uppercase; 
+  		}
+
+		& td {
+			font-size: 14px;
+			border: none;
+		}
+
+
+		& td,th {
+  			padding: .625em !important;
+  			text-align: center;
+		}
+
+
+		& tr:nth-of-type(odd) {
+			background: #eeeeee !important;
+		}
+
+	}			
+
+	& table.ca-table-2 th {
+  		width: 50%; 
+	}
+
+	& table.ca-table-3 th {
+  		width: 33.3333%; 
+	}
+
+	& table.ca-table-4 th {
+  		width: 25%; 
+	}

@@ -1,0 +1,547 @@
+/* Grid Version 2
+/* Author: Louis Stephens
+/*
+*/
+
+// Fallback for previous version 1.0
+@import url("https://www.theautohost.com/_assets/coding/cagriddle/css/cagriddle.min.css");
+
+// Global Variables
+$padding-global: 20px;
+$padding-small: 10px;
+$padding-horizontal: 10px;
+$padding-vertical: 10px;
+$padding-bottom: 10px;
+$defaultwidth: 8.333%;
+
+// Manufacturer Colors
+$acura: #e82c2a;
+$audi: #cd1f35;
+$buick: #f26518;
+$bmw: #1c69d4;
+$cadillac: #9e1834;
+$chevy: #f1b923;
+$fiat: #b11636;
+$ford: #2D96CD;
+$gmc: #BC0A0F;
+$honda: #2086c1;
+$hyundai: #002D73;
+$infiniti: #201d26;
+$kia: #c4172c;
+$lexus: #1a1a1a;
+$lincoln: #231F1F;
+$maserati: #0b2749;
+$mazda: #df0000;
+$mini: #ac2430;
+$mb: #222222;
+$mitsubishi: #ff0022;
+$nissan: #c3002f;
+$subaru: #20609F;
+$toyota: #d71921;
+$volvo: #003057;
+$vw: #00B1EB;
+
+$demo: #36e6bf;	
+
+
+
+$white: #FFFFFF;
+$grey: #e4e4e4;
+$btncolor: #FFFFFF;
+
+
+$left: left;
+$center: center;
+$right: right;
+$justify: justify;
+
+$bold: bold;
+$normal: normal;
+
+$overline: overline;
+$underline: underline;
+$linethrough: line-through;
+
+
+$columncount: 2;
+
+#standard-preview {
+	width: 900px ;
+}
+
+#mobile-preview {
+	width: 450px ;
+}
+  
+.demo {
+	background: #a9fffe;
+	padding: 10px;
+} 
+
+// Each loop to create columns
+@for $i from 1 through 12 {
+ 	//$width: percentage(.0833333333 * $i);
+ 	$width: 8.33333333 * $i;
+	$computedwidth: $width * 1%;
+ 		.ca-container {
+ 			& .ca-row {
+	 			& .ca-col-#{$i} {
+					width: $computedwidth; 
+				}
+			}
+		}
+}	
+
+// Each loop to create offsets
+@for $i from 1 through 11 {
+ 	//$width: percentage(.0833333333 * $i);
+ 	$width: 8.33333333 * $i;
+	$computedmargin: $width * 1%;
+ 		.ca-container {
+ 			& .ca-row {
+	 			& .ca-offset-#{$i} {
+					margin-left: $computedmargin; 
+				}
+			}
+		}
+}	
+
+
+$manufacturers: (acura: $acura, audi: $audi, bmw: $bmw, buick: $buick, cadillac: $cadillac, chevy: $chevy, fiat: $fiat, ford: $ford, gmc: $gmc, honda: $honda, hyundai: $hyundai, infiniti: $infiniti, kia: $kia, lexus: $lexus, lincoln: $lincoln, maserati: $maserati, mazda: $mazda, mini: $mini, mb: $mb, mitsubishi: $mitsubishi, nissan: $nissan, subaru: $subaru, toyota: $toyota, volvo: $volvo, vw: $vw, grey: $grey, demo: $demo);
+
+$textalignment: (left: $left, center: $center, right: $right, justify: $justify);
+// Each Loop for Text Alignment
+ @each $property, $alignment in $textalignment {
+	& .ca-text-#{$property} {
+		text-align: $alignment;
+	}
+}	 
+
+$fontsizes: (xs: 8px, sm: 10px, md: 18px, lg: 24px);
+// Each Loop for Font Sizes
+ @each $fontsize, $size in $fontsizes {
+	& .ca-font-#{$fontsize} {
+		font-size: $size;
+	}
+}	 
+
+$fontweight: (bold: $bold, normal: $normal);
+// Each Loop for Font Sizes
+ @each $property, $weight in $fontweight {
+	& .ca-font-#{$property} {
+		font-weight: $weight;
+	}
+}	 
+
+
+
+$textdecoration: (overline: $overline, underline: $underline, linethrough: $linethrough);
+ @each $property, $attribute in $textdecoration {
+	& .ca-text-#{$property} {
+		text-decoration: $attribute; 
+	}
+}	 
+
+@mixin manufacturer($bg) {
+	background: $bg;
+	border: 1px solid $bg;
+	color: #FFFFFF;
+    padding: 15px 20px;
+	width: 100%;
+    font-family: 'OpenSansBold', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 0 $bg;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	&:hover {
+   	box-shadow: inset 0 50px 0 0 darken($bg,15%);
+
+	}
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+@mixin button($bg) {
+	background: $bg;
+	&:hover {
+		background:darken($bg,15%);
+	}
+	&:active {
+		background:darken($bg,15%); 
+	} 
+}
+
+
+
+
+@mixin background($bg) {
+background: $bg;
+}
+
+@mixin text($bg) {
+color: $bg;
+}
+
+
+.ca-container * {
+	margin: 0;
+	padding: 0;
+	//@include box-sizing(border-box)
+	box-sizing: border-box;
+}
+
+ 
+
+.ca-container{
+	padding: $padding-vertical 0;
+	font-family: Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+
+	& .ca-row {
+		width: 100%;
+		padding: $padding-vertical 0;
+		overflow: auto;
+
+	& [class*="ca-col-"] {
+			float: left;
+			padding-right: $padding-global;
+		}
+
+	& [class*="ca-col-"] {
+			padding:0 10px;
+	}
+
+	& [class*="ca-col-"] > .ca-row [class*="ca-col-"] {
+  		padding-left: 0 !important;
+	}  
+
+
+	& [class*="ca-col-"] > .ca-row [class*="ca-col-"]:last-of-type {
+  		padding-right: 0 !important;
+	}
+
+	& .ca-col-fifths {
+		width: 20%;
+	}
+
+	} //end row
+
+	// Text abd Font Classes
+	& .ca-font-disclaimer{
+		font-size: 8px;
+	}
+
+	& h1 {
+		padding-left:0;
+		font-size: 32px;
+	}
+
+	& h2 {
+		padding-left:0;
+		font-size: 24px;
+	}
+	
+	& h3 {
+		padding-left:0;
+		font-size: 18px;
+	}
+	
+	& h4 {
+		padding-left:0;
+		font-size: 16px;
+	}
+
+	& h5 {
+		padding-left:0;
+		font-size: 14px;
+	}
+
+	& p {
+		padding: 10px 0;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 110%;
+	}
+
+	& br {
+		display: none !important;
+	}
+
+	& ul {
+		font-size: 14px; 
+		padding: 5px 0 10px 20px;
+		list-style: disc;
+	}
+
+	& ul.ca-list-none {
+		list-style: none;
+	}
+
+	& ul.ca-list-inline li {
+		display: inline;
+		padding: 10px 10px;
+		margin: 10px 0;
+	}
+
+	& ul.ca-list-inline li:first-of-type {
+		padding-left: 0;
+	}
+
+	& ul.ca-list-inline li:last-of-type {
+		padding-right: 0;
+	}
+
+	& .ca-text-bold {
+		font-weight: bold;
+	}
+
+	& .ca-text-underline {
+		text-decoration: underline;
+	}
+
+
+	// Images
+	& .ca-image {
+		display: block;
+		width: 100%;
+	}
+
+	& .ca-iframe {
+		width: 100%;
+	}
+
+
+ 
+	// Each loop to create colors
+ 	@each $manufacturer, $color in $manufacturers {
+		& .ca-btn-#{$manufacturer} {
+			@include manufacturer($color);
+		}
+	}	 
+
+	& .ca-btn-bmw {
+		border-radius: 0 !important;
+	}
+	// Demo
+ 	& .ca-btn-demo {
+		@include manufacturer($demo);
+	}
+
+	// Each loop to create colors
+ 	@each $manufacturer, $color in $manufacturers {
+		& .ca-background-#{$manufacturer} {
+			@include background($color);
+		}
+	}	 
+ 
+ 	& .ca-background-bmw {
+		 border-radius: 0 !important;
+	}
+	
+	// Demo
+ 	& .ca-background-demo {
+		 @include background($demo);
+	}
+	
+	// Each loop to create colors
+ 	@each $manufacturer, $color in $manufacturers {
+		& .ca-font-color-#{$manufacturer} {
+			@include text($color);
+		}
+	}	 
+
+	
+
+
+
+
+	//form
+	& form.ca-form {
+		padding: 10px;
+		border: 1px solid #c5c5c5;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+	}
+
+	& form.ca-form label {
+		font-size: 14px;
+		padding: 10px 0;
+	}
+
+	& form.ca-form .ca-radio-inline input[type=radio] {
+		display: inline;
+	}
+
+	& form.ca-form .ca-radio-inline label {
+		padding: 0 10px;
+	}
+
+
+	& form.ca-form input[type=text] {
+		font-size: 14px;
+		width: 100%;
+		border: 1px solid #c5c5c5;
+		padding: 10px;
+		margin: 10px 0 0 0;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+
+	}
+
+	& form.ca-form .ca-form-inline {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	& form.ca-form .ca-form-inline label {
+		padding: 0 5px 0 0;
+	}
+
+	& form.ca-form .ca-form-inline input[type=text] {
+		width: auto;
+	}
+
+	& form.ca-form textarea {
+		font-size: 14px;
+		width: 100%;
+		border: 1px solid #c5c5c5;
+		padding: 10px;
+		border-radius: 6px 6px 6px 6px;
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+	}
+
+	& table.ca-table {
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid #c5c5c5;
+		border-collapse: collapse;
+
+		th {
+			//background: #808080;
+			color: #FFFFFF;
+			font-weight: bold;
+			  font-size: .85em;
+ 			 letter-spacing: .1em;
+  			text-transform: uppercase; 
+		}
+
+		td {
+			font-size: 14px;
+			border: 1px solid #c5c5c5;
+		}
+
+		td,th {
+  			padding: .625em !important;
+  			text-align: center;
+		}
+	}
+
+	& table.ca-table-striped {
+		width: 100%;
+		max-width: 100%;
+		border-collapse: collapse;
+		border:none !important;
+
+		& th {
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: .85em;
+ 			letter-spacing: .1em;
+  			text-transform: uppercase; 
+  		}
+
+		& td {
+			font-size: 14px;
+			border: none;
+		}
+
+
+		& td,th {
+  			padding: .625em !important;
+  			text-align: center;
+		}
+
+
+		& tr:nth-of-type(odd) {
+			background: #eeeeee !important;
+		}
+
+	}			
+
+	& table.ca-table-2 th {
+  		width: 50%; 
+	}
+
+	& table.ca-table-3 th {
+  		width: 33.3333%; 
+	}
+
+	& table.ca-table-4 th {
+  		width: 25%; 
+	}
+
+
+	& .ca-display-desktop {
+		display: block;
+	}
+
+	& .ca-display-mobile {
+		display: none;
+	}
+
+	& .ca-display-none {
+		display: none;
+	}
+
+	& .unhappyMessage {
+		padding: 5px 10px;
+		background: red;
+		color: $white;
+	}
+
+
+} // end container
+
+.ca-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.grid-pad {
+	padding: $padding-global 0 $padding-global $padding-global;
+}
+
+
+.ca-container .ca-row .ca-video {
+		position: relative;
+		padding-bottom: 56.25%;
+		padding-top: 25px;
+		height: 0;
+	}
+	
+	.ca-container .ca-row .ca-video iframe{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+
+
+@import "mediaqueries";

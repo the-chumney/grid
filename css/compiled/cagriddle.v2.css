@@ -1,0 +1,1568 @@
+/* Grid Version 2
+/* Author: Louis Stephens
+/*
+*/
+@import url("https://www.theautohost.com/_assets/coding/cagriddle/css/cagriddle.min.css");
+#standard-preview {
+  width: 900px;
+}
+
+#mobile-preview {
+  width: 450px;
+}
+
+.demo {
+  background: #a9fffe;
+  padding: 10px;
+}
+
+.ca-container .ca-row .ca-col-1 {
+  width: 8.33333%;
+}
+
+.ca-container .ca-row .ca-col-2 {
+  width: 16.66667%;
+}
+
+.ca-container .ca-row .ca-col-3 {
+  width: 25.0%;
+}
+
+.ca-container .ca-row .ca-col-4 {
+  width: 33.33333%;
+}
+
+.ca-container .ca-row .ca-col-5 {
+  width: 41.66667%;
+}
+
+.ca-container .ca-row .ca-col-6 {
+  width: 50.0%;
+}
+
+.ca-container .ca-row .ca-col-7 {
+  width: 58.33333%;
+}
+
+.ca-container .ca-row .ca-col-8 {
+  width: 66.66667%;
+}
+
+.ca-container .ca-row .ca-col-9 {
+  width: 75.0%;
+}
+
+.ca-container .ca-row .ca-col-10 {
+  width: 83.33333%;
+}
+
+.ca-container .ca-row .ca-col-11 {
+  width: 91.66667%;
+}
+
+.ca-container .ca-row .ca-col-12 {
+  width: 100.0%;
+}
+
+.ca-container .ca-row .ca-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.ca-container .ca-row .ca-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.ca-container .ca-row .ca-offset-3 {
+  margin-left: 25.0%;
+}
+
+.ca-container .ca-row .ca-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.ca-container .ca-row .ca-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.ca-container .ca-row .ca-offset-6 {
+  margin-left: 50.0%;
+}
+
+.ca-container .ca-row .ca-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.ca-container .ca-row .ca-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.ca-container .ca-row .ca-offset-9 {
+  margin-left: 75.0%;
+}
+
+.ca-container .ca-row .ca-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.ca-container .ca-row .ca-offset-11 {
+  margin-left: 91.66667%;
+}
+
+.ca-text-left {
+  text-align: left;
+}
+
+.ca-text-center {
+  text-align: center;
+}
+
+.ca-text-right {
+  text-align: right;
+}
+
+.ca-text-justify {
+  text-align: justify;
+}
+
+.ca-font-xs {
+  font-size: 8px;
+}
+
+.ca-font-sm {
+  font-size: 10px;
+}
+
+.ca-font-md {
+  font-size: 18px;
+}
+
+.ca-font-lg {
+  font-size: 24px;
+}
+
+.ca-font-bold {
+  font-weight: bold;
+}
+
+.ca-font-normal {
+  font-weight: normal;
+}
+
+.ca-text-overline {
+  text-decoration: overline;
+}
+
+.ca-text-underline {
+  text-decoration: underline;
+}
+
+.ca-text-linethrough {
+  text-decoration: line-through;
+}
+
+.ca-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ca-container {
+  padding: 10px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+
+.ca-container .ca-row {
+  width: 100%;
+  padding: 10px 0;
+  overflow: auto;
+}
+
+.ca-container .ca-row [class*="ca-col-"] {
+  float: left;
+  padding-right: 20px;
+}
+
+.ca-container .ca-row [class*="ca-col-"] {
+  padding: 0 10px;
+}
+
+.ca-container .ca-row [class*="ca-col-"] > .ca-row [class*="ca-col-"] {
+  padding-left: 0 !important;
+}
+
+.ca-container .ca-row [class*="ca-col-"] > .ca-row [class*="ca-col-"]:last-of-type {
+  padding-right: 0 !important;
+}
+
+.ca-container .ca-row .ca-col-fifths {
+  width: 20%;
+}
+
+.ca-container .ca-font-disclaimer {
+  font-size: 8px;
+}
+
+.ca-container h1 {
+  padding-left: 0;
+  font-size: 32px;
+}
+
+.ca-container h2 {
+  padding-left: 0;
+  font-size: 24px;
+}
+
+.ca-container h3 {
+  padding-left: 0;
+  font-size: 18px;
+}
+
+.ca-container h4 {
+  padding-left: 0;
+  font-size: 16px;
+}
+
+.ca-container h5 {
+  padding-left: 0;
+  font-size: 14px;
+}
+
+.ca-container p {
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+.ca-container br {
+  display: none !important;
+}
+
+.ca-container ul {
+  font-size: 14px;
+  padding: 5px 0 10px 20px;
+  list-style: disc;
+}
+
+.ca-container ul.ca-list-none {
+  list-style: none;
+}
+
+.ca-container ul.ca-list-inline li {
+  display: inline;
+  padding: 10px 10px;
+  margin: 10px 0;
+}
+
+.ca-container ul.ca-list-inline li:first-of-type {
+  padding-left: 0;
+}
+
+.ca-container ul.ca-list-inline li:last-of-type {
+  padding-right: 0;
+}
+
+.ca-container .ca-text-bold {
+  font-weight: bold;
+}
+
+.ca-container .ca-text-underline {
+  text-decoration: underline;
+}
+
+.ca-container .ca-image {
+  display: block;
+  width: 100%;
+}
+
+.ca-container .ca-iframe {
+  width: 100%;
+}
+
+.ca-container .ca-btn-acura {
+  background: #e82c2a;
+  border: 1px solid #e82c2a;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #e82c2a;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-acura:hover {
+  box-shadow: inset 0 50px 0 0 #b21513;
+}
+
+.ca-container .ca-btn-acura:active {
+  background: #b21513;
+}
+
+.ca-container .ca-btn-audi {
+  background: #cd1f35;
+  border: 1px solid #cd1f35;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #cd1f35;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-audi:hover {
+  box-shadow: inset 0 50px 0 0 #8b1524;
+}
+
+.ca-container .ca-btn-audi:active {
+  background: #8b1524;
+}
+
+.ca-container .ca-btn-bmw {
+  background: #1c69d4;
+  border: 1px solid #1c69d4;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #1c69d4;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-bmw:hover {
+  box-shadow: inset 0 50px 0 0 #134890;
+}
+
+.ca-container .ca-btn-bmw:active {
+  background: #134890;
+}
+
+.ca-container .ca-btn-buick {
+  background: #f26518;
+  border: 1px solid #f26518;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #f26518;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-buick:hover {
+  box-shadow: inset 0 50px 0 0 #b3460a;
+}
+
+.ca-container .ca-btn-buick:active {
+  background: #b3460a;
+}
+
+.ca-container .ca-btn-cadillac {
+  background: #9e1834;
+  border: 1px solid #9e1834;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #9e1834;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-cadillac:hover {
+  box-shadow: inset 0 50px 0 0 #5c0e1e;
+}
+
+.ca-container .ca-btn-cadillac:active {
+  background: #5c0e1e;
+}
+
+.ca-container .ca-btn-chevy {
+  background: #f1b923;
+  border: 1px solid #f1b923;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #f1b923;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-chevy:hover {
+  box-shadow: inset 0 50px 0 0 #bc8c0c;
+}
+
+.ca-container .ca-btn-chevy:active {
+  background: #bc8c0c;
+}
+
+.ca-container .ca-btn-fiat {
+  background: #b11636;
+  border: 1px solid #b11636;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #b11636;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-fiat:hover {
+  box-shadow: inset 0 50px 0 0 #6d0e21;
+}
+
+.ca-container .ca-btn-fiat:active {
+  background: #6d0e21;
+}
+
+.ca-container .ca-btn-ford {
+  background: #2D96CD;
+  border: 1px solid #2D96CD;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #2D96CD;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-ford:hover {
+  box-shadow: inset 0 50px 0 0 #1f688e;
+}
+
+.ca-container .ca-btn-ford:active {
+  background: #1f688e;
+}
+
+.ca-container .ca-btn-gmc {
+  background: #BC0A0F;
+  border: 1px solid #BC0A0F;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #BC0A0F;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-gmc:hover {
+  box-shadow: inset 0 50px 0 0 #730609;
+}
+
+.ca-container .ca-btn-gmc:active {
+  background: #730609;
+}
+
+.ca-container .ca-btn-honda {
+  background: #2086c1;
+  border: 1px solid #2086c1;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #2086c1;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-honda:hover {
+  box-shadow: inset 0 50px 0 0 #15587f;
+}
+
+.ca-container .ca-btn-honda:active {
+  background: #15587f;
+}
+
+.ca-container .ca-btn-hyundai {
+  background: #002D73;
+  border: 1px solid #002D73;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #002D73;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-hyundai:hover {
+  box-shadow: inset 0 50px 0 0 #000f27;
+}
+
+.ca-container .ca-btn-hyundai:active {
+  background: #000f27;
+}
+
+.ca-container .ca-btn-infiniti {
+  background: #201d26;
+  border: 1px solid #201d26;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #201d26;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-infiniti:hover {
+  box-shadow: inset 0 50px 0 0 black;
+}
+
+.ca-container .ca-btn-infiniti:active {
+  background: black;
+}
+
+.ca-container .ca-btn-kia {
+  background: #c4172c;
+  border: 1px solid #c4172c;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #c4172c;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-kia:hover {
+  box-shadow: inset 0 50px 0 0 #800f1d;
+}
+
+.ca-container .ca-btn-kia:active {
+  background: #800f1d;
+}
+
+.ca-container .ca-btn-lexus {
+  background: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #1a1a1a;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-lexus:hover {
+  box-shadow: inset 0 50px 0 0 black;
+}
+
+.ca-container .ca-btn-lexus:active {
+  background: black;
+}
+
+.ca-container .ca-btn-lincoln {
+  background: #231F1F;
+  border: 1px solid #231F1F;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #231F1F;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-lincoln:hover {
+  box-shadow: inset 0 50px 0 0 black;
+}
+
+.ca-container .ca-btn-lincoln:active {
+  background: black;
+}
+
+.ca-container .ca-btn-maserati {
+  background: #0b2749;
+  border: 1px solid #0b2749;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #0b2749;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-maserati:hover {
+  box-shadow: inset 0 50px 0 0 #010307;
+}
+
+.ca-container .ca-btn-maserati:active {
+  background: #010307;
+}
+
+.ca-container .ca-btn-mazda {
+  background: #df0000;
+  border: 1px solid #df0000;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #df0000;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-mazda:hover {
+  box-shadow: inset 0 50px 0 0 #930000;
+}
+
+.ca-container .ca-btn-mazda:active {
+  background: #930000;
+}
+
+.ca-container .ca-btn-mini {
+  background: #ac2430;
+  border: 1px solid #ac2430;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ac2430;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-mini:hover {
+  box-shadow: inset 0 50px 0 0 #6d171e;
+}
+
+.ca-container .ca-btn-mini:active {
+  background: #6d171e;
+}
+
+.ca-container .ca-btn-mb {
+  background: #222222;
+  border: 1px solid #222222;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #222222;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-mb:hover {
+  box-shadow: inset 0 50px 0 0 black;
+}
+
+.ca-container .ca-btn-mb:active {
+  background: black;
+}
+
+.ca-container .ca-btn-mitsubishi {
+  background: #ff0022;
+  border: 1px solid #ff0022;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ff0022;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-mitsubishi:hover {
+  box-shadow: inset 0 50px 0 0 #b30018;
+}
+
+.ca-container .ca-btn-mitsubishi:active {
+  background: #b30018;
+}
+
+.ca-container .ca-btn-nissan {
+  background: #c3002f;
+  border: 1px solid #c3002f;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #c3002f;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-nissan:hover {
+  box-shadow: inset 0 50px 0 0 #77001d;
+}
+
+.ca-container .ca-btn-nissan:active {
+  background: #77001d;
+}
+
+.ca-container .ca-btn-subaru {
+  background: #20609F;
+  border: 1px solid #20609F;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #20609F;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-subaru:hover {
+  box-shadow: inset 0 50px 0 0 #133a5f;
+}
+
+.ca-container .ca-btn-subaru:active {
+  background: #133a5f;
+}
+
+.ca-container .ca-btn-toyota {
+  background: #d71921;
+  border: 1px solid #d71921;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #d71921;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-toyota:hover {
+  box-shadow: inset 0 50px 0 0 #921116;
+}
+
+.ca-container .ca-btn-toyota:active {
+  background: #921116;
+}
+
+.ca-container .ca-btn-volvo {
+  background: #003057;
+  border: 1px solid #003057;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #003057;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-volvo:hover {
+  box-shadow: inset 0 50px 0 0 #00060b;
+}
+
+.ca-container .ca-btn-volvo:active {
+  background: #00060b;
+}
+
+.ca-container .ca-btn-vw {
+  background: #00B1EB;
+  border: 1px solid #00B1EB;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #00B1EB;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-vw:hover {
+  box-shadow: inset 0 50px 0 0 #00779f;
+}
+
+.ca-container .ca-btn-vw:active {
+  background: #00779f;
+}
+
+.ca-container .ca-btn-grey {
+  background: #e4e4e4;
+  border: 1px solid #e4e4e4;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #e4e4e4;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-grey:hover {
+  box-shadow: inset 0 50px 0 0 #bebebe;
+}
+
+.ca-container .ca-btn-grey:active {
+  background: #bebebe;
+}
+
+.ca-container .ca-btn-bmw {
+  border-radius: 0 !important;
+}
+
+.ca-container .ca-btn-demo {
+  background: #36e6bf;
+  border: 1px solid #36e6bf;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  width: 100%;
+  font-family: 'OpenSansBold', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #36e6bf;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.ca-container .ca-btn-demo:hover {
+  box-shadow: inset 0 50px 0 0 #17b995;
+}
+
+.ca-container .ca-btn-demo:active {
+  background: #17b995;
+}
+
+.ca-container .ca-background-acura {
+  background: #e82c2a;
+}
+
+.ca-container .ca-background-audi {
+  background: #cd1f35;
+}
+
+.ca-container .ca-background-bmw {
+  background: #1c69d4;
+}
+
+.ca-container .ca-background-buick {
+  background: #f26518;
+}
+
+.ca-container .ca-background-cadillac {
+  background: #9e1834;
+}
+
+.ca-container .ca-background-chevy {
+  background: #f1b923;
+}
+
+.ca-container .ca-background-fiat {
+  background: #b11636;
+}
+
+.ca-container .ca-background-ford {
+  background: #2D96CD;
+}
+
+.ca-container .ca-background-gmc {
+  background: #BC0A0F;
+}
+
+.ca-container .ca-background-honda {
+  background: #2086c1;
+}
+
+.ca-container .ca-background-hyundai {
+  background: #002D73;
+}
+
+.ca-container .ca-background-infiniti {
+  background: #201d26;
+}
+
+.ca-container .ca-background-kia {
+  background: #c4172c;
+}
+
+.ca-container .ca-background-lexus {
+  background: #1a1a1a;
+}
+
+.ca-container .ca-background-lincoln {
+  background: #231F1F;
+}
+
+.ca-container .ca-background-maserati {
+  background: #0b2749;
+}
+
+.ca-container .ca-background-mazda {
+  background: #df0000;
+}
+
+.ca-container .ca-background-mini {
+  background: #ac2430;
+}
+
+.ca-container .ca-background-mb {
+  background: #222222;
+}
+
+.ca-container .ca-background-mitsubishi {
+  background: #ff0022;
+}
+
+.ca-container .ca-background-nissan {
+  background: #c3002f;
+}
+
+.ca-container .ca-background-subaru {
+  background: #20609F;
+}
+
+.ca-container .ca-background-toyota {
+  background: #d71921;
+}
+
+.ca-container .ca-background-volvo {
+  background: #003057;
+}
+
+.ca-container .ca-background-vw {
+  background: #00B1EB;
+}
+
+.ca-container .ca-background-grey {
+  background: #e4e4e4;
+}
+
+.ca-container .ca-background-bmw {
+  border-radius: 0 !important;
+}
+
+.ca-container .ca-background-demo {
+  background: #36e6bf;
+}
+
+.ca-container .ca-font-color-acura {
+  color: #e82c2a;
+}
+
+.ca-container .ca-font-color-audi {
+  color: #cd1f35;
+}
+
+.ca-container .ca-font-color-bmw {
+  color: #1c69d4;
+}
+
+.ca-container .ca-font-color-buick {
+  color: #f26518;
+}
+
+.ca-container .ca-font-color-cadillac {
+  color: #9e1834;
+}
+
+.ca-container .ca-font-color-chevy {
+  color: #f1b923;
+}
+
+.ca-container .ca-font-color-fiat {
+  color: #b11636;
+}
+
+.ca-container .ca-font-color-ford {
+  color: #2D96CD;
+}
+
+.ca-container .ca-font-color-gmc {
+  color: #BC0A0F;
+}
+
+.ca-container .ca-font-color-honda {
+  color: #2086c1;
+}
+
+.ca-container .ca-font-color-hyundai {
+  color: #002D73;
+}
+
+.ca-container .ca-font-color-infiniti {
+  color: #201d26;
+}
+
+.ca-container .ca-font-color-kia {
+  color: #c4172c;
+}
+
+.ca-container .ca-font-color-lexus {
+  color: #1a1a1a;
+}
+
+.ca-container .ca-font-color-lincoln {
+  color: #231F1F;
+}
+
+.ca-container .ca-font-color-maserati {
+  color: #0b2749;
+}
+
+.ca-container .ca-font-color-mazda {
+  color: #df0000;
+}
+
+.ca-container .ca-font-color-mini {
+  color: #ac2430;
+}
+
+.ca-container .ca-font-color-mb {
+  color: #222222;
+}
+
+.ca-container .ca-font-color-mitsubishi {
+  color: #ff0022;
+}
+
+.ca-container .ca-font-color-nissan {
+  color: #c3002f;
+}
+
+.ca-container .ca-font-color-subaru {
+  color: #20609F;
+}
+
+.ca-container .ca-font-color-toyota {
+  color: #d71921;
+}
+
+.ca-container .ca-font-color-volvo {
+  color: #003057;
+}
+
+.ca-container .ca-font-color-vw {
+  color: #00B1EB;
+}
+
+.ca-container .ca-font-color-grey {
+  color: #e4e4e4;
+}
+
+.ca-container form.ca-form {
+  padding: 10px;
+  border: 1px solid #c5c5c5;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
+
+.ca-container form.ca-form label {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.ca-container form.ca-form .ca-radio-inline input[type=radio] {
+  display: inline;
+}
+
+.ca-container form.ca-form .ca-radio-inline label {
+  padding: 0 10px;
+}
+
+.ca-container form.ca-form input[type=text] {
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
+
+.ca-container form.ca-form .ca-form-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ca-container form.ca-form .ca-form-inline label {
+  padding: 0 5px 0 0;
+}
+
+.ca-container form.ca-form .ca-form-inline input[type=text] {
+  width: auto;
+}
+
+.ca-container form.ca-form textarea {
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  padding: 10px;
+  border-radius: 6px 6px 6px 6px;
+  -moz-border-radius: 6px 6px 6px 6px;
+  -webkit-border-radius: 6px 6px 6px 6px;
+}
+
+.ca-container table.ca-table {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #c5c5c5;
+  border-collapse: collapse;
+}
+
+.ca-container table.ca-table th {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.ca-container table.ca-table td {
+  font-size: 14px;
+  border: 1px solid #c5c5c5;
+}
+
+.ca-container table.ca-table td, .ca-container table.ca-table th {
+  padding: .625em !important;
+  text-align: center;
+}
+
+.ca-container table.ca-table-striped {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border: none !important;
+}
+
+.ca-container table.ca-table-striped th {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.ca-container table.ca-table-striped td {
+  font-size: 14px;
+  border: none;
+}
+
+.ca-container table.ca-table-striped td, .ca-container table.ca-table-striped th {
+  padding: .625em !important;
+  text-align: center;
+}
+
+.ca-container table.ca-table-striped tr:nth-of-type(odd) {
+  background: #eeeeee !important;
+}
+
+.ca-container table.ca-table-2 th {
+  width: 50%;
+}
+
+.ca-container table.ca-table-3 th {
+  width: 33.3333%;
+}
+
+.ca-container table.ca-table-4 th {
+  width: 25%;
+}
+
+.ca-container .ca-display-desktop {
+  display: block;
+}
+
+.ca-container .ca-display-mobile {
+  display: none;
+}
+
+.ca-container .ca-display-none {
+  display: none;
+}
+
+.ca-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+
+@media only screen and (max-width: 650px) {
+  .ca-container .ca-row {
+    padding: 0;
+  }
+  .ca-container .ca-row [class*="ca-col-"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .ca-container .ca-row [class*="ca-col-"] .ca-row [class*="ca-col-"] {
+    padding-right: 0 !important;
+  }
+  .ca-container .ca-row [class*="ca-col-"] .ca-row [class*="ca-col-"]:last-of-type {
+    padding-left: 0 !important;
+  }
+  .ca-container .ca-row [class*="ca-offset-"] {
+    margin-left: 0 !important;
+  }
+  .ca-container .ca-row {
+    padding: 0;
+  }
+  .ca-container .ca-row {
+    padding: 0;
+  }
+  .ca-container .ca-display-desktop {
+    display: none !important;
+  }
+  .ca-container .ca-display-mobile {
+    display: block;
+  }
+  .ca-container .catable {
+    width: 100%;
+    border: 0;
+  }
+  .ca-container .catable thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .ca-container .catable tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .ca-container .catable td.ca-table-comparehead {
+    font-weight: bold;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  .ca-container .catable td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  .ca-container .catable td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .ca-container .catable td:last-child {
+    border-bottom: 0;
+  }
+}
+
+@media screen and (max-device-width: 375px) and (max-device-height: 667px) {
+  .ca-container .ca-table {
+    width: 100%;
+    border: 0;
+  }
+  .ca-container .ca-table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  .ca-container .ca-table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .ca-container .ca-table td.ca-table-comparehead {
+    font-weight: bold;
+    display: block;
+    font-size: .8em;
+    text-align: center;
+  }
+  .ca-container .ca-table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  .ca-container .ca-table td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .ca-container .ca-table td:last-child {
+    border-bottom: 0;
+  }
+}

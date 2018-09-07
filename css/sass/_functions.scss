@@ -1,0 +1,116 @@
+// Each loop to create columns
+@for $i from 1 through 12 {
+ 	//$width: percentage(.0833333333 * $i);
+ 	$width: 8.33333333 * $i;
+	$computedwidth: $width * 1%;
+    
+    .ca-container {
+        & .ca-row {
+            & .ca-col-#{$i} {
+                width: $computedwidth; 
+            }
+        }
+    }
+}	
+
+// Each loop to create offsets
+@for $i from 1 through 11 {
+ 	//$width: percentage(.0833333333 * $i);
+ 	$width: 8.33333333 * $i;
+	$computedmargin: $width * 1%;
+    
+    .ca-container {
+        & .ca-row {
+            & .ca-offset-#{$i} {
+                margin-left: $computedmargin; 
+            }
+        }
+    }
+}	
+
+// Each Loop for Text Alignment
+ @each $property, $alignment in $textalignment {
+	& .ca-text-#{$property} {
+		text-align: $alignment;
+	}
+}	 
+
+// Each Loop for Font Sizes
+ @each $fontsize, $size in $fontsizes {
+	& .ca-font-#{$fontsize} {
+		font-size: $size;
+	}
+}	 
+
+// Each Loop for Font Sizes
+ @each $property, $weight in $fontweight {
+	& .ca-font-#{$property} {
+		font-weight: $weight;
+	}
+}	 
+
+ @each $property, $attribute in $textdecoration {
+	& .ca-text-#{$property} {
+		text-decoration: $attribute; 
+	}
+}
+
+// Each loop to create colors
+@each $manufacturer, $color in $manufacturers {
+    & .ca-btn-#{$manufacturer} {
+        @include manufacturer($color);
+    }
+}	 
+
+// Each loop to create button with border
+@each $buttonoutline, $color in $manufacturers {
+    & .ca-btn-outline-#{$buttonoutline} {
+        @include buttonoutline($color);
+    }
+}   
+
+// Each loop to create background colors
+@each $manufacturer, $color in $manufacturers {
+    & .ca-background-#{$manufacturer} {
+        @include background($color);
+    }
+}	 
+
+& .ca-background-bmw {
+     border-radius: 0 !important;
+}
+
+// Demo
+& .ca-background-demo {
+     @include background($demo);
+}
+
+// Each loop to create text colors
+@each $manufacturer, $color in $manufacturers {
+    & .ca-font-color-#{$manufacturer} {
+        @include text($color);
+    }
+}	 
+
+// Each loop to create button group colors
+@each $buttongroup, $color in $manufacturers {
+    & .ca-button-group-#{$buttongroup} {
+        @include buttongroup($color);
+    }
+}	 
+
+
+// Each loop to create hr colors
+@each $manufacturer, $color in $manufacturers {
+    & .ca-hr-#{$manufacturer} {
+        @include hr($color);
+    }
+}    
+
+
+// Each loop to create button group colors
+@each $trims, $color in $manufacturers {
+    & .ca-trim-#{$trims} {
+        @include trims($color);
+    }
+}	 

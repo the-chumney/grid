@@ -1,0 +1,168 @@
+@media only screen and (max-width : 650px) { 
+	.ca-container {
+		& .ca-row {
+			padding: 0;
+			& [class*="ca-col-"] {
+				width: 100%;
+				margin: 5px 0;
+			
+				& .ca-row [class*="ca-col-"] {
+					padding-left: 0 !important;
+				}
+
+				& .ca-row [class*="ca-col-"]:last-of-type {
+					padding-right: 0 !important;
+				}
+
+				& .ca-row [class*="ca-col-"] {
+					padding-right: 0 !important;
+				}
+
+
+	
+			}
+			
+			& [class*="ca-offset-"] {
+				margin-left: 0 !important;
+			}
+		}
+
+		& .ca-row {
+			padding: 0
+		}
+
+		& .ca-row {
+			padding: 0
+		}
+
+
+		& .ca-display-desktop {
+			display: none !important;
+		}
+
+		& .ca-display-mobile {
+			display: block;
+		}
+	
+
+	}
+
+
+	.ca-container {
+		.catable{
+			width: 100%;
+			border:0;
+
+			thead {
+					border: none;
+					clip: rect(0 0 0 0);
+					height: 1px;
+					margin: -1px;
+					overflow: hidden;
+					padding: 0;
+					position: absolute;
+					width: 1px;
+				}
+
+				tr {
+					border-bottom: 3px solid #ddd;
+					display: block;
+					margin-bottom: .625em;
+				}
+
+				td.ca-table-comparehead {
+					font-weight:bold;
+					display: block;
+					font-size: .8em;
+					text-align: center;
+				}
+
+				td {
+					border-bottom: 1px solid #ddd;
+					display: block;
+					font-size: .8em;
+					text-align: right;
+				}
+					
+				td:before {
+					content: attr(data-label);
+					float: left;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+
+				td:last-child {
+					border-bottom: 0;
+				}				
+		}
+	}
+
+	& #ca-sidebar {
+		display:none;
+	}
+	
+	& .slicknav_menu {
+		display:block !important;
+	}
+
+	& .ca-trim-acura i {
+		display: none;
+	}
+
+}
+
+
+@media screen and (max-device-width: 375px) and (max-device-height: 667px) { 
+	.ca-container {
+					.ca-table{
+				width: 100%;
+				border:0;
+
+				thead {
+						border: none;
+						clip: rect(0 0 0 0);
+						height: 1px;
+						margin: -1px;
+						overflow: hidden;
+						padding: 0;
+						position: absolute;
+						width: 1px;
+					}
+
+					tr {
+						border-bottom: 3px solid #ddd;
+						display: block;
+						margin-bottom: .625em;
+					}
+
+					td.ca-table-comparehead {
+						font-weight:bold;
+						display: block;
+						font-size: .8em;
+						text-align: center;
+					}
+
+					td {
+						border-bottom: 1px solid #ddd;
+						display: block;
+						font-size: .8em;
+						text-align: right;
+					}
+					
+					td:before {
+						content: attr(data-label);
+						float: left;
+						font-weight: bold;
+						text-transform: uppercase;
+					}
+
+					td:last-child {
+						border-bottom: 0;
+					}				
+			}
+	}
+
+
+}
+
+
