@@ -5215,7 +5215,7 @@
   -webkit-border-radius: 6px 6px 6px 6px;
 }
 
-.ca-container form.ca-form input[type=textarea] {
+.ca-container form.ca-form textarea {
   font-size: 14px;
   width: 100%;
   border: 1px solid #c5c5c5;
